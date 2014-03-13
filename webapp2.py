@@ -994,7 +994,7 @@ class Route(BaseRoute):
                 value = str(value)
 
             if not regex.match(value):
-                raise ValueError('URI buiding error: Value "%s" is not '
+                raise ValueError('URI building error: Value "%s" is not '
                     'supported for argument "%s".' % (value, name.strip('_')))
 
             values[name] = value
